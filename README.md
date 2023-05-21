@@ -1,3 +1,5 @@
+Projeto de Biblioteca Local
+
 Este é um projeto de uma biblioteca local desenvolvido em C# com banco de dados MySQL. A aplicação permite o gerenciamento de livros, clientes, empréstimos e outras funcionalidades relacionadas a uma biblioteca.
 
 Recursos principais:
