@@ -70,6 +70,7 @@ namespace Biblioteca
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "ENTRAR";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblEmail
             // 
@@ -116,6 +117,7 @@ namespace Biblioteca
             this.lnkCadastro.TabIndex = 6;
             this.lnkCadastro.TabStop = true;
             this.lnkCadastro.Text = "Deseja se cadastar?";
+            this.lnkCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCadastro_LinkClicked);
             // 
             // chkLembre
             // 
@@ -146,9 +148,11 @@ namespace Biblioteca
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = " Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Encerrar);
             this.ResumeLayout(false);
             this.PerformLayout();
 

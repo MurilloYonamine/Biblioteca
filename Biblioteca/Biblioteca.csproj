@@ -86,8 +86,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ClienteController.cs" />
+    <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\IDAO.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="model\Administrador.cs" />
+    <Compile Include="model\Autor.cs" />
     <Compile Include="model\BancoDeDados.cs" />
+    <Compile Include="model\Bibliotecario.cs" />
+    <Compile Include="model\Categoria.cs" />
+    <Compile Include="model\Categoria_Livro.cs" />
+    <Compile Include="model\Cliente.cs" />
+    <Compile Include="model\Emprestimo.cs" />
+    <Compile Include="model\Livro.cs" />
+    <Compile Include="model\Usuario.cs" />
+    <Compile Include="view\frmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frmCadastro.Designer.cs">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\frmInicioCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frmInicioCliente.Designer.cs">
+      <DependentUpon>frmInicioCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +121,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="view\frmCadastro.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frmInicioCliente.resx">
+      <DependentUpon>frmInicioCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
