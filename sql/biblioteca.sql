@@ -9,4 +9,4 @@ CREATE TABLE tb_emprestimo (
     FOREIGN KEY (cliente_cpf) references tb_cliente(cliente_cpf),
     FOREIGN KEY (livro_isbn) references tb_livro(livro_isbn)
 )
-DEFAULT CHARSET = utf8;
+DEFAULT CHARSET = utf8;tb_usuario
